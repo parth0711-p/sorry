@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I'm Sorry 💌</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+
+<section class="screen on">
+  <div class="tag">For my</div><div class="name" id="herName"></div>
+  <h1 class="big"><i>I am</i><b>SORRY</b></h1>
+  <p>I made this just for you, for the moments when you're upset. Take a deep breath, read slowly, and check what I made for you ❤️</p>
+  <svg class="bear" width="150" height="140" viewBox="0 0 150 140"><path d="M75 128C20 90 8 60 28 32c14-18 36-14 47 4 11-18 33-22 47-4 20 28 8 58-47 96z" fill="none" stroke="#e03a3e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="45" cy="45" r="11" fill="#c98f5e"/><circle cx="105" cy="45" r="11" fill="#c98f5e"/><circle cx="75" cy="72" r="34" fill="#d9a46e"/><ellipse cx="75" cy="84" rx="14" ry="10" fill="#f6dcb8"/><circle cx="63" cy="66" r="4" fill="#3a2a22"/><circle cx="87" cy="66" r="4" fill="#3a2a22"/><ellipse cx="75" cy="79" rx="5" ry="3.5" fill="#3a2a22"/><path d="M69 88q6 5 12 0" stroke="#3a2a22" stroke-width="2" fill="none"/><path d="M60 106l15 7 15-7-4 12H64z" fill="#2c5aa0"/></svg>
+</section>
+
+<section class="screen">
+  <div class="hint" id="gameHint">Fill the heart to continue ♡</div>
+  <div class="grid" id="grid"></div>
+  <p id="gameMsg" style="min-height:20px"></p>
+</section>
+
+<section class="screen">
+  <div class="card letter" style="position:relative">
+    <span class="pet">🐱</span>
+    <div class="tag">A Letter</div><div class="serif" style="color:var(--pink);font-weight:700;letter-spacing:.15em">FOR YOU ✦</div>
+    <h3>My Dearest <span class="herName"></span>,</h3>
+    <p style="font-size:12.5px">I'm sorry for the times I hurt you. You mean the world to me, and all I want is to see your smile back. I'll listen better, love harder, and never stop choosing you. ❤️</p>
+    <div class="sig">With all my love — <span class="himName"></span> 💌</div>
+    <span class="stamp">❤️</span>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="card" style="position:relative">
+    <h2>Special Cards</h2>
+    <div class="meta"><span><b>FROM:</b> Me</span><span><b>TO:</b> My Love</span></div>
+    <div class="frame"><div class="top" id="cTop"></div><div class="emo" id="cEmo"></div><div class="cap script" id="cCap"></div>
+      <button class="arr l" id="cPrev">‹</button><button class="arr r" id="cNext">›</button></div>
+    <div class="meta"><span><b>DATE:</b> Now<br><b>VALID FOR:</b> Forever</span><span class="script">with love, <span class="himName"></span> 💌</span></div>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="card">
+    <h2 style="font-size:18px">Songs Dedicated To You 💖</h2>
+    <div class="now"><small id="nowTag"></small><b class="serif" id="title"></b><div id="artist" style="font-size:11px;color:var(--soft)"></div></div>
+    <iframe id="sp" title="Spotify player" width="100%" height="152" style="border:0;border-radius:12px;background:transparent" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="ctl" style="margin-top:14px"><button id="prev">⏮</button><span id="dots" class="dots"></span><button id="skip">⏭</button></div>
+    <p style="font-size:10.5px;margin:12px auto 0">Tap ▶ to play. Log in to Spotify to hear the full song 🎧</p>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="card" style="text-align:left">
+    <div class="tag" style="font-size:9px">For my love ✦</div>
+    <h1 class="serif" style="font-style:italic;color:var(--pink);font-size:40px;margin:18px 0 0;text-align:center;font-weight:500">Thank You</h1>
+    <div style="text-align:center;font-weight:800;letter-spacing:.04em">FOR BEING MINE 💞</div>
+    <p style="text-align:center;font-size:12px">I hope this little space made you smile.<br>You are my favorite part of every day — always. ❤️</p>
+    <div class="script" style="color:var(--red);text-align:center;font-size:14px">made with ❤️ and sparkles — forever yours, <span class="himName"></span></div>
+    <div style="text-align:right;font-size:40px">🐻</div>
+  </div>
+</section>
+
+</div>
+<nav><button id="back">← Back</button><button id="next">Next →</button></nav>
+
+<script src="script.js"></script>
+</body>
+</html>
